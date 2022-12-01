@@ -8,15 +8,6 @@ def get_lines(path):
     return lines
 
 
-def _sum(arr):
-    sum = 0
-
-    for i in arr:
-        sum = sum + i
-
-    return sum
-
-
 def main():
     values = []
     totals = []
@@ -32,7 +23,7 @@ def main():
             arr = []
 
     for _set in values:
-        totals.append(_sum(_set))
+        totals.append(sum(_set))
 
     sorted_totals = sorted(totals)
     # part 1
